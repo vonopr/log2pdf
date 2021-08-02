@@ -4,4 +4,5 @@ echo \`\`\` >> gitlog.md
 echo \\newpage >> gitlog.md
 echo \\tableofcontents\\label{toc} >> gitlog.md
 
+
 pandoc --pdf-engine=lualatex -s  gitlog.yaml gitlog.md  -o gitlog.pdf
