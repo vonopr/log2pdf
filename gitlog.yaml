@@ -1,0 +1,30 @@
+
+---
+title:  "Changelog of log2pdf project"
+header-includes: |
+   \usepackage{sectsty}
+   \allsectionsfont{\mdseries\sectionrule{6ex}{0pt}{1.5ex}{0pt}}
+   \usepackage{hyperref}
+   \hypersetup{hidelinks}
+   \usepackage{setspace}
+   \onehalfspacing
+   \usepackage{etoolbox}
+   \BeforeBeginEnvironment{verbatim}{\def\baselinestretch{0.75}}
+   \usepackage{newunicodechar}
+   \newfontfamily\extendedfont{DejaVu Serif}
+   
+   \iffontchar\font`├ \else \newunicodechar{├}{{\extendedfont ├}} \fi
+   
+   \iffontchar\font`─ \else \newunicodechar{─}{{\extendedfont ─}} \fi
+
+   \iffontchar\font`└ \else \newunicodechar{└}{{\extendedfont └}} \fi
+   
+   \iffontchar\font`∞ \else \newunicodechar{∞}{{\extendedfont ∞}} \fi
+
+fontsize: 10pt
+mainfont: "Heuristica"
+monofont: "inconsolata"
+monofontoptions: "Scale=0.8"
+...
+The changelog of log2pdf progect generated from git log.
+\textit{\hyperref[toc]{The table of contents is at the end of the document.}} 
