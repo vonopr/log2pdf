@@ -54,4 +54,6 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
+            log2pdf.sh
+            gitlog.yaml
             gitlog.pdf
