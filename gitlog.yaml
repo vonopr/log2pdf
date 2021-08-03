@@ -4,6 +4,11 @@ title:  "Changelog of log2pdf project"
 header-includes: |
    \usepackage{sectsty}
    \usepackage{erewhon}
+   \usepackage{needspace}
+   \usepackage{etoolbox}
+   \makeatletter
+   \pretocmd{\subsection}{\addtocontents{toc}{}{}{\Needspace*{10\baselineskip}}}{}{}
+   \makeatother
    \allsectionsfont{\mdseries\sectionrule{6ex}{0pt}{1.5ex}{0pt}}
    \usepackage{hyperref}
    \hypersetup{hidelinks}

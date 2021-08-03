@@ -1,5 +1,5 @@
 echo '```' > gitlog.md
-git log --reverse --stat --format='```%n## %s%n%n```%n%n%H%n%ai%n%an <%ae>%n```%n  %b%nFiles changed: %n```' >> gitlog.md
+git log --reverse --stat --format='```%n## %s%n```%n%n%H%n%ai%n%an <%ae>%n```%n  %b%nFiles changed: %n```' >> gitlog.md
 echo '```' >> gitlog.md
 pandoc -f markdown-raw_tex gitlog.md  -o gitlog.md # use pandoc filter "markdown-raw_tex" to escape backslashes in commit messages
 
