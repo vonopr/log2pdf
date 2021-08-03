@@ -26,5 +26,5 @@ fontsize: 10pt
 monofont: "inconsolata"
 monofontoptions: "Scale=0.8"
 ...
-The changelog of log2pdf progect generated from git log.
+The changelog of log2pdf project generated from git log.
 \textit{\hyperref[toc]{The table of contents is at the end of the document.}} 
