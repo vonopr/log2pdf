@@ -6,6 +6,9 @@ pandoc -f markdown-raw_tex gitlog.md  -o gitlog.md # use pandoc filter "markdown
 echo '\newpage' > toc.md
 echo '\tableofcontents\label{toc}' >> toc.md
 
+dos2unix gitlog.md
+dos2unix toc.md
+
 pandoc -s  gitlog.yaml gitlog.md toc.md  -o gitlog.tex
 latexmk -pdf -pdfxe -f  gitlog.tex
 
