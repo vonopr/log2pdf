@@ -3,6 +3,7 @@
 title:  "Changelog of log2pdf project"
 header-includes: |
    \usepackage{sectsty}
+   \usepackage{erewhon}
    \allsectionsfont{\mdseries\sectionrule{6ex}{0pt}{1.5ex}{0pt}}
    \usepackage{hyperref}
    \hypersetup{hidelinks}
@@ -22,7 +23,6 @@ header-includes: |
    \iffontchar\font`∞ \else \newunicodechar{∞}{{\extendedfont ∞}} \fi
 
 fontsize: 10pt
-mainfont: "Utopia"
 monofont: "inconsolata"
 monofontoptions: "Scale=0.8"
 ...
