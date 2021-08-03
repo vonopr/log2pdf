@@ -1,8 +1,13 @@
 echo '```' > gitlog.md
 git log --reverse --stat --format='```%n## %s%n%n```%n%n%H%n%ai%n%an <%ae>%n```%n  %b%nFiles changed: %n```' >> gitlog.md
 echo '```' >> gitlog.md
-echo '\newpage' >> gitlog.md
-echo '\tableofcontents\label{toc}' >> gitlog.md
+pandoc -f markdown-raw_tex gitlog.md  -o gitlog.md # use pandoc filter "markdown-raw_tex" to escape backslashes in commit messages
 
-pandoc -s  gitlog.yaml gitlog.md  -o gitlog.tex
+echo '\newpage' > toc.md
+echo '\tableofcontents\label{toc}' >> toc.md
+
+pandoc -s  gitlog.yaml gitlog.md toc.md  -o gitlog.tex
 latexmk -pdf -pdfxe -f  gitlog.tex
+
+rm gitlog.md
+rm toc.md
