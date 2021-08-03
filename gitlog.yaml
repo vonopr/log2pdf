@@ -1,6 +1,5 @@
 
 ---
-title:  "Changelog of log2pdf project"
 header-includes: |
    \usepackage{sectsty}
    \usepackage{erewhon}
@@ -33,5 +32,3 @@ fontsize: 10pt
 monofont: "inconsolata"
 monofontoptions: "Scale=0.8"
 ...
-The changelog of log2pdf project generated from git log.
-\textit{\hyperref[toc]{The table of contents is at the end of the document.}} 
