@@ -21,6 +21,8 @@ header-includes: |
    \iffontchar\font`└ \else \newunicodechar{└}{{\extendedfont └}} \fi
    
    \iffontchar\font`∞ \else \newunicodechar{∞}{{\extendedfont ∞}} \fi
+   
+   \iffontchar\font`� \else \newunicodechar{�}{{\extendedfont ?}} \fi
 
 fontsize: 10pt
 monofont: "inconsolata"
