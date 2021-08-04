@@ -19,6 +19,6 @@ title: The git-log of \textsc{'$project'} project
 ...' > project.yaml
 
 pandoc -s project.yaml gitlog.yaml  intro.md gitlog.md toc.md -o gitlog.tex
-latexmk -pdf -pdfxe -f gitlog.tex
+latexmk -pdf -pdfxe gitlog.tex
 
 rm intro.md gitlog.md toc.md project.yaml
