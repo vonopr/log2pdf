@@ -13,10 +13,6 @@ echo 'The changelog of log2pdf project generated from git log.'\
 
 echo '\newpage' > toc.md
 echo '\tableofcontents\label{toc}' >> toc.md
-
-dos2unix gitlog.md
-dos2unix toc.md
-
 echo '
 ---
 title: Changelog of '$project' project
@@ -25,7 +21,4 @@ title: Changelog of '$project' project
 pandoc -s --metadata-file=project.yaml gitlog.yaml  intro.md gitlog.md toc.md -o gitlog.tex
 latexmk -pdf -pdfxe -f gitlog.tex
 
-rm intro.md
-rm gitlog.md
-rm toc.md
-rm project.yaml
+rm intro.md gitlog.md toc.md project.yaml
