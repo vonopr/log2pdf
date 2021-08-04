@@ -5,6 +5,10 @@ header-includes: |
    \usepackage{erewhon}
    \usepackage{needspace}
    \usepackage{etoolbox}
+   \usepackage{marginnote}
+   \renewcommand\marginnotevadjust{-\baselineskip}
+   \usepackage[margin=2.25in]{geometry}
+   \raggedright
    \makeatletter
    \pretocmd{\subsection}{\addtocontents{toc}{}{}{\Needspace*{10\baselineskip}}}{}{}
    \makeatother
